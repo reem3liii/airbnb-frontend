@@ -1,0 +1,41 @@
+<div *ngFor="let p of places" class="container">
+    <swiper
+      [slidesPerView]="1"
+      [spaceBetween]="10"
+      [navigation]="true"
+      [pagination]="{ clickable: true }"
+    >
+      <ng-template swiperSlide>
+        <img src={{p.imagesUrls[0]}}>
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src={{p.imagesUrls[1]}}>
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src={{p.imagesUrls[2]}}>
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src={{p.imagesUrls[3]}}>
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src={{p.imagesUrls[4]}}>
+      </ng-template>
+    </swiper>
+
+</div>
+    <!--
+<div class="alert alert-dark" *ngFor="let p of places">
+  <p>Location: {{p.location}}</p>
+  <p>type: {{p.type}}</p>
+  <p>dailyPrice: {{p.dailyPrice}}</p>
+  <p>Rating: {{p.avgRating}}</p>
+  <img src={{p.imagesUrls[0]}}>
+  <img src={{p.imagesUrls[1]}}>
+  <img src={{p.imagesUrls[2]}}>
+  <img src={{p.imagesUrls[3]}}>
+  <img src={{p.imagesUrls[4]}}>
+
+  <p>Email: <a routerLink="/students/{{s.id}}">{{s.email}}</a></p>
+
+</div>
+-->
