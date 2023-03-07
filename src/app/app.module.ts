@@ -7,6 +7,7 @@ import { SearchPipe } from './Pipes/search.pipe';
 import { HeaderComponent } from './Components/header/header.component';
 import { PlaceModule } from './Components/place/place.module';
 import { ErrorComponent } from './Components/error/error.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ErrorComponent } from './Components/error/error.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    PlaceModule
+    PlaceModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
